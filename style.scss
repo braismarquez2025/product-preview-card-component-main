@@ -1,0 +1,165 @@
+$negro: #1C232B;
+$grey: #6C7289;
+$cream: #F2EAE2;
+$green500: #3D8168;
+$green700: #1A4032;
+    
+$font-primary: "Fraunces", serif;
+$font-secondary: "Montserrat", sans-serif;
+
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+
+@mixin breakpoint($bp) {
+    @if $bp == tablet {
+      @media (min-width: $bp-tablet) {
+        @content;
+      }
+    }
+  
+    @if $bp == desktop {
+      @media (min-width: $bp-desktop) {
+        @content;
+      }
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: $cream;
+
+    @include breakpoint(tablet) {
+        margin-left: 84px;
+        margin-right: 84px;
+    }
+
+    @include breakpoint(desktop) {
+        margin-left: 420px;
+        margin-right: 420px;
+    }
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 79px;
+    margin-bottom: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    @include breakpoint(tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 286px;
+        margin-bottom: 286px;
+    }
+
+
+    .img-desktop {
+        width: 350px;
+        height: 342px;
+        object-fit: cover;
+        border-radius: 8px;
+
+        @include breakpoint(tablet) {
+            width: 300px;
+            height: 456px;
+        }
+    }
+
+}
+
+.data_container {
+    padding: 32px;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &-pretitle {
+            font-size: 12px;
+            line-height: 120%;
+            letter-spacing: 5px;
+            font-family: $font-secondary;
+            color: $grey;
+            text-transform: uppercase;
+        }
+
+        &-title {
+            color: $negro;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            font-family: $font-primary;
+        }
+
+        &-description {
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0px;
+            font-family: $font-secondary;
+            color: $grey;
+        }
+    }
+
+    &_price {
+        display: flex;
+        gap: 16px;
+        margin-top: 24px;
+        align-items: center;
+        margin-bottom: 24px;
+
+        &-now {
+            color: $green500;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            font-family: $font-primary;
+            font-weight: bold;
+        }
+
+        &-before {
+            color: $grey;
+            font-size: 13px;
+            line-height: 120%;
+            font-family: $font-secondary;
+            text-decoration: line-through;
+        }
+    }
+
+    &_carrito {
+        background-color: $green500;
+        color: white;
+        font-size: 14px;
+        line-height: 110%;
+        letter-spacing: 0px;
+        font-family: $font-secondary;
+        padding: 17.5px;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $green700;
+        }
+
+        .carrito {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+
+
