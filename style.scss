@@ -76,6 +76,8 @@ body {
         }
 
         @include breakpoint(desktop) {
+            display: block;
+            width: 100%;
             border-radius: 8px 0px 0px 8px;
         }
     }
