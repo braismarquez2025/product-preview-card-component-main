@@ -52,6 +52,11 @@ body {
     border-radius: 8px 0px 0px 8px;
   }
 }
+@media (min-width: 1440px) {
+  .container .img-desktop {
+    border-radius: 8px 0px 0px 8px;
+  }
+}
 .container .img-mobile {
   width: 100%;
   -o-object-fit: cover;

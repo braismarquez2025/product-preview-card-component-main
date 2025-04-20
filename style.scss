@@ -74,6 +74,10 @@ body {
             width: 100%;
             border-radius: 8px 0px 0px 8px;
         }
+
+        @include breakpoint(desktop) {
+            border-radius: 8px 0px 0px 8px;
+        }
     }
 
     .img-mobile {
