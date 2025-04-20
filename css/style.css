@@ -37,6 +37,11 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (min-width: 1440px) {
+  .container {
+    margin-top: 200px;
+  }
+}
 .container .img-desktop {
   display: none;
 }
@@ -44,6 +49,7 @@ body {
   .container .img-desktop {
     display: block;
     width: 100%;
+    border-radius: 8px 0px 0px 8px;
   }
 }
 .container .img-mobile {
