@@ -35,21 +35,31 @@ body {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 286px;
-    margin-bottom: 286px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    margin-top: 35%;
   }
 }
 .container .img-desktop {
-  width: 350px;
-  height: 342px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .container .img-desktop {
+    display: block;
+    width: 100%;
+  }
+}
+.container .img-mobile {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
 }
 @media (min-width: 768px) {
-  .container .img-desktop {
-    width: 300px;
-    height: 456px;
+  .container .img-mobile {
+    display: none;
   }
 }
 
