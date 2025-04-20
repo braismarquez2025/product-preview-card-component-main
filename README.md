@@ -14,12 +14,12 @@ Esta es una solución al [desafío de la vista previa del producto en Frontend M
 ## Descripción general
 
 ### Captura de pantalla
-![](./assets/images/Frontend-Mentor-Recipe-page-04-20-2025_09_22_PM.png)
+![](./images/Frontend-Mentor-Product-preview-card-component-04-20-2025_10_08_PM.png)
 
 
 ### Links
-- [URL de la solución](https://www.frontendmentor.io/solutions/men-navegable-de-pgina-web-html-y-css-vUgVs_SLAZ)
-- [URL del sitio en vivo](https://braismarquez2025.github.io/social-links-profile-main/)
+- [URL de la solución](https://www.frontendmentor.io/solutions/vista-previa-a-producto-con-html-y-css-vlMGVnJm2D)
+- [URL del sitio en vivo](https://braismarquez2025.github.io/product-preview-card-component-main/)
 
 
 ## Mi proceso
@@ -30,6 +30,7 @@ Esta es una solución al [desafío de la vista previa del producto en Frontend M
 - Propiedades personalizadas de CSS
 - Preprocesador SCSS
 - Flexbox
+- CSS Grid
 
 ### Autor 
 - Usuario de Frontend - [@braismarquez2025](https://www.frontendmentor.io/profile/braismarquez2025)
