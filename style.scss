@@ -61,10 +61,6 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    @include breakpoint(desktop) {
-        margin-top: 35%;
-    }
-
 
     .img-desktop {
         display: none;

@@ -37,11 +37,6 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1440px) {
-  .container {
-    margin-top: 35%;
-  }
-}
 .container .img-desktop {
   display: none;
 }
