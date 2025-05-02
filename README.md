@@ -1,4 +1,4 @@
-# Frontend Mentor - Solución de componentes de código QR
+# Frontend Mentor - Solución de la vista previa del producto
 
 Esta es una solución al [desafío de la vista previa del producto en Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de programación creando proyectos realistas.
 
